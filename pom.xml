@@ -8,11 +8,22 @@
         <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>ru.teadev</groupId>
-    <artifactId>student-testing-platform</artifactId>
+
+    <groupId>ru.teadev.testingplatform</groupId>
+    <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+
     <name>student-testing-platform</name>
+
+    <modules>
+        <module>authorization</module>
+        <module>testing</module>
+        <module>certification</module>
+        <module>notifications</module>
+    </modules>
+
 
     <properties>
         <java.version>11</java.version>
