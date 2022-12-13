@@ -11,5 +11,12 @@
     <artifactId>authorization-vaadin</artifactId>
     <name>vaadin</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>ru.teadev.testingplatform</groupId>
+            <artifactId>authorization-usecase</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

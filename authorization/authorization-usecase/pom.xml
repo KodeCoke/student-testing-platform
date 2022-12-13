@@ -11,5 +11,12 @@
     <artifactId>authorization-usecase</artifactId>
     <name>usecase</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>ru.teadev.testingplatform</groupId>
+            <artifactId>authorization-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
