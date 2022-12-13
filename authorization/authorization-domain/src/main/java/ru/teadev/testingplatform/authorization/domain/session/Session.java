@@ -17,11 +17,11 @@ import ru.teadev.testingplatform.authorization.domain.user.UserId;
 public class Session {
 
     public static Session create(@NonNull UserId userId) {
-        return new Session(UUID.randomUUID(), userId);
+        return new Session(new SessionId(UUID.randomUUID()), userId);
     }
 
     @NonNull
-    private UUID id;
+    private SessionId id;
 
     @NonNull
     private UserId userId;

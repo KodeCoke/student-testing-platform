@@ -10,9 +10,10 @@ public class UserRestorer {
 
     @NonNull
     public User restore(@NonNull UserId userId,
-                        @NonNull String name,
+                        @NonNull String login,
+                        @NonNull String password,
                         @NonNull Set<Role> roles) {
-        return new User(userId, name, roles);
+        return new User(userId, login, password, roles);
     }
 
 }

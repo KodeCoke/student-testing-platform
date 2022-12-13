@@ -1,7 +1,5 @@
 package ru.teadev.testingplatform.authorization.domain.session;
 
-import java.util.UUID;
-
 import lombok.NonNull;
 import org.springframework.stereotype.Service;
 import ru.teadev.testingplatform.authorization.domain.user.UserId;
@@ -10,7 +8,7 @@ import ru.teadev.testingplatform.authorization.domain.user.UserId;
 public class SessionRestorer {
 
     @NonNull
-    public Session restore(@NonNull UUID id,
+    public Session restore(@NonNull SessionId id,
                            @NonNull UserId userId) {
         return new Session(id, userId);
     }
