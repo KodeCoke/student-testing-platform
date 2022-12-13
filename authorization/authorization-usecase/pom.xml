@@ -4,19 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>ru.teadev.testingplatform</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>authorization</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>authorization</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>authorization-domain</module>
-        <module>authorization-usecase</module>
-        <module>authorization-storage</module>
-        <module>authorization-vaadin</module>
-    </modules>
+    <artifactId>authorization-usecase</artifactId>
+    <name>usecase</name>
 
 
 </project>
