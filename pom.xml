@@ -18,6 +18,7 @@
     <name>student-testing-platform</name>
 
     <modules>
+        <module>application</module>
         <module>authorization</module>
         <module>testing</module>
         <module>certification</module>
@@ -26,6 +27,8 @@
 
 
     <properties>
+        <spring-boot.version>2.7.5</spring-boot.version>
+
         <java.version>11</java.version>
         <org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
         <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
@@ -93,7 +96,7 @@
                         <path>
                             <groupId>org.springframework.boot</groupId>
                             <artifactId>spring-boot-configuration-processor</artifactId>
-                            <version>${project.parent.version}</version>
+                            <version>${spring-boot.version}</version>
                         </path>
                         <path>
                             <groupId>org.mapstruct</groupId>
