@@ -16,6 +16,7 @@
         <module>authorization-usecase</module>
         <module>authorization-storage</module>
         <module>authorization-vaadin</module>
+        <module>authorization-runner</module>
     </modules>
 
 
