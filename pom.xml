@@ -31,6 +31,7 @@
         <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
         <checkstyle.version>9.3</checkstyle.version>
         <maven-checkstyle-plugin.configLocation>settings/checks.xml</maven-checkstyle-plugin.configLocation>
+        <vaadin-platform.version>23.2.11</vaadin-platform.version>
     </properties>
 
     <dependencies>

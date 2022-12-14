@@ -17,6 +17,13 @@
             <artifactId>authorization-usecase</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin</artifactId>
+            <version>${vaadin-platform.version}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
