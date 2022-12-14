@@ -1,4 +1,4 @@
-package ru.teadev.testingplatform.authorization.vaadin;
+package ru.teadev.testingplatform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
