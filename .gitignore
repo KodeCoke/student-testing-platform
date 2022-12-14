@@ -33,11 +33,16 @@ build/
 .vscode/
 
 node_modules/
-frontend/generated/
-/frontend/index.html
+frontend/
 /package.json
 /package-lock.json
 /tsconfig.json
 /types.d.ts
 /vite.config.ts
 /vite.generated.ts
+/authorization/authorization-vaadin/package.json
+/authorization/authorization-vaadin/package-lock.json
+/authorization/authorization-vaadin/tsconfig.json
+/authorization/authorization-vaadin/types.d.ts
+/authorization/authorization-vaadin/vite.config.ts
+/authorization/authorization-vaadin/vite.generated.ts
