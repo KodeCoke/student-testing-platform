@@ -1,9 +1,11 @@
 package ru.teadev.testingplatform.authorization.usecase.user.access;
 
+import lombok.NonNull;
 import ru.teadev.testingplatform.authorization.domain.user.User;
 
 public interface UserPersister {
 
-    User save(User user);
+    @NonNull
+    User save(@NonNull User user);
 
 }
