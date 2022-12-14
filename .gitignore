@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+node_modules/
+frontend/generated/
+/frontend/index.html
+/package.json
+/package-lock.json
+/tsconfig.json
+/types.d.ts
+/vite.config.ts
+/vite.generated.ts

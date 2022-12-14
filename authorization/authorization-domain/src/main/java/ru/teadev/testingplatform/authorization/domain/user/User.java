@@ -71,6 +71,10 @@ public class User {
         return unmodifiableSet(roles);
     }
 
+    public void clearRoles() {
+        roles.clear();
+    }
+
     public boolean hasRole(@NonNull Role role) {
         return roles.contains(role);
     }

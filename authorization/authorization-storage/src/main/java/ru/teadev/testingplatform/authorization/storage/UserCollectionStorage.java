@@ -1,11 +1,14 @@
 package ru.teadev.testingplatform.authorization.storage;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Optional.ofNullable;
 
 import lombok.NonNull;
+import lombok.val;
 import org.springframework.stereotype.Service;
 import ru.teadev.testingplatform.authorization.domain.user.User;
 import ru.teadev.testingplatform.authorization.domain.user.UserId;
@@ -41,5 +44,10 @@ public class UserCollectionStorage implements UserExtractor, UserPersister, User
     @Override
     public void delete(User user) {
         storageMap.remove(user.getId());
+    }
+
+    @Override
+    public List<User> findAll() {
+        return new ArrayList<>(storageMap.values());
     }
 }
