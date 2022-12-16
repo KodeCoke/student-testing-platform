@@ -1,13 +1,11 @@
 package ru.teadev.testingplatform.authorization.vaadin.user.registration;
 
-import java.util.HashSet;
-
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.teadev.testingplatform.authorization.domain.user.exception.BlankLoginException;
@@ -15,22 +13,20 @@ import ru.teadev.testingplatform.authorization.domain.user.exception.BlankPasswo
 import ru.teadev.testingplatform.authorization.domain.user.exception.LoginAlreadyExistsException;
 import ru.teadev.testingplatform.authorization.usecase.user.RegisterUser;
 
+import java.util.HashSet;
+
 @Route("/user/registration")
+@PageTitle("Регистрация нового пользователя")
 public class UserRegistrationForm extends VerticalLayout {
 
+    private final VerticalLayout mainLayout = new VerticalLayout();
+    private final TextField loginTextField = new TextField();
+    private final TextField passwordTextField = new TextField();
+    private final Button registerButton = new Button();
+
     public UserRegistrationForm(@Autowired RegisterUser registerUser) {
-
-        VerticalLayout mainLayout = new VerticalLayout();
-
-        H1 header = new H1("Регистрация нового пользователя");
-
-        TextField loginTextField = new TextField();
         loginTextField.setLabel("Введите логин:");
-
-        TextField passwordTextField = new TextField();
         passwordTextField.setLabel("Введите пароль:");
-
-        Button registerButton = new Button();
         registerButton.setText("Зарегистрировать");
         registerButton.addClickListener(click -> {
             try {
@@ -46,7 +42,6 @@ public class UserRegistrationForm extends VerticalLayout {
         });
 
         mainLayout.add(
-                header,
                 loginTextField,
                 passwordTextField,
                 registerButton
